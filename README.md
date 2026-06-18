@@ -2,36 +2,101 @@
 
 ## Overview
 
-This project is a Machine Learning based Credit Card Fraud Detection System developed using Python and Tkinter. It helps identify fraudulent credit card transactions and provides transaction analytics, report generation, and administrative controls.
+The Credit Card Fraud Detection System is a Machine Learning based desktop application developed using Python, Tkinter, SQLite, and Scikit-Learn. The system helps detect potentially fraudulent credit card transactions and provides transaction management, analytics, trend visualization, and report generation.
+
+This project combines Machine Learning and Database Management to provide a practical fraud detection solution with an easy-to-use graphical user interface.
+
+---
 
 ## Features
 
-- User Registration and Login
-- Credit Card Fraud Prediction
-- Machine Learning Integration
-- Transaction Management
-- Transaction History
-- Fraud Analytics Dashboard
-- Transaction Trend Analysis
-- CSV Report Export
-- Excel Report Export
-- Admin Panel
-- SQLite Database Management
+### User Management
 
-## Technologies Used
+* User Registration
+* User Login Authentication
+* Secure Access Control
 
-- Python
-- Tkinter
-- SQLite
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
-- Joblib
+### Fraud Detection
+
+* Machine Learning Based Fraud Prediction
+* Fraud Probability Score
+* Legitimate/Fraud Classification
+
+### Transaction Management
+
+* Add New Transactions
+* Store Transaction Details
+* View Transaction History
+
+### Analytics Dashboard
+
+* Total Transactions
+* Fraud Transactions
+* Legitimate Transactions
+* Fraud Rate Analysis
+* Pie Chart Visualization
+* Bar Chart Visualization
+
+### Reports
+
+* Export CSV Report
+* Export Excel Report
+
+### Trend Analysis
+
+* Transaction Trend Analysis
+* Fraud Trend Analysis
+* Graphical Visualization using Matplotlib
+
+### Administration
+
+* View Registered Users
+* Delete Users
+* Monitor System Statistics
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* Tkinter
+
+### Backend
+
+* Python
+
+### Database
+
+* SQLite
+
+### Machine Learning
+
+* Scikit-Learn
+* Random Forest Classifier
+* Logistic Regression
+* Decision Tree
+
+### Data Processing
+
+* Pandas
+* NumPy
+
+### Visualization
+
+* Matplotlib
+
+### Model Storage
+
+* Joblib
+
+---
 
 ## Project Structure
 
-Credit Card Fraud Detection System
+```text
+Credit-Card-Fraud-Detection-System
+│
 ├── main.py
 ├── login.py
 ├── register.py
@@ -45,30 +110,153 @@ Credit Card Fraud Detection System
 ├── export_csv.py
 ├── export_excel.py
 ├── admin_panel.py
-├── database.db
+│
 ├── fraud_model.pkl
-└── dataset/creditcard.csv
+├── database.db
+│
+├── dataset/
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
-## How to Run
+---
 
-1. Install required libraries
+## Dataset Information
 
-pip install pandas scikit-learn matplotlib openpyxl joblib
+This project uses the Credit Card Fraud Detection Dataset from Kaggle.
 
-2. Run the project
+Due to GitHub file size limitations, the dataset file is not included in this repository.
 
+Download the dataset from:
+
+https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+After downloading:
+
+1. Create a folder named `dataset`
+2. Place `creditcard.csv` inside the folder
+
+Example:
+
+```text
+dataset/
+└── creditcard.csv
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/Credit-Card-Fraud-Detection-System.git
+```
+
+### Navigate to Project Folder
+
+```bash
+cd Credit-Card-Fraud-Detection-System
+```
+
+### Install Required Libraries
+
+```bash
+pip install pandas
+pip install numpy
+pip install matplotlib
+pip install scikit-learn
+pip install joblib
+pip install openpyxl
+```
+
+Or:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Train Machine Learning Model
+
+Before running the project:
+
+```bash
+python train_model.py
+```
+
+This generates:
+
+```text
+fraud_model.pkl
+```
+
+---
+
+## Run Project
+
+```bash
 python main.py
+```
+
+---
+
+## Workflow
+
+```text
+Start Project
+      ↓
+Login/Register
+      ↓
+Dashboard
+      ↓
+Add Transaction
+      ↓
+Fraud Prediction
+      ↓
+Store in Database
+      ↓
+Analytics & Reports
+```
+
+---
 
 ## Future Enhancements
 
-- Real-time transaction monitoring
-- Email alert system
-- OTP verification
-- Cloud database integration
-- Deep Learning based fraud detection
+* Real-Time Fraud Detection
+* Email Alert System
+* OTP Verification
+* Cloud Database Integration
+* Deep Learning Models
+* Web-Based Version
+* Mobile Application Support
+
+---
+
+## Learning Outcomes
+
+* Machine Learning Integration
+* Python GUI Development
+* Database Management
+* Data Analysis
+* Data Visualization
+* Software Development Lifecycle
+
+---
 
 ## Author
 
 Lovish Dogra
+
 B.Tech CSE (AI & ML)
+
 Quantum University
+
+---
+
+## License
+
+This project is licensed under the MIT License.
